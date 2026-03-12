@@ -52,18 +52,18 @@ body {
 }
 
 .page {
-    display: none;
+    display: none !important;
     min-height: 100vh;
     min-height: 100svh;
 }
 
 .page.active {
-    display: block;
+    display: block !important;
 }
 
 /* ===================== LOGIN PAGE ===================== */
-#loginPage {
-    display: flex;
+#loginPage.active {
+    display: flex !important;
     align-items: center;
     justify-content: center;
     padding: 24px 16px;
@@ -320,12 +320,11 @@ body {
 #quizPage {
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 16px);
-    display: none;
     flex-direction: column;
     min-height: 100svh;
 }
 #quizPage.active {
-    display: flex;
+    display: flex !important;
 }
 .quiz-header {
     display: flex;
