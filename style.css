@@ -69,7 +69,7 @@ body {
     padding: 24px 16px;
     padding-top: env(safe-area-inset-top, 24px);
     padding-bottom: env(safe-area-inset-bottom, 24px);
-}\n
+}
 .login-container {
     width: 100%;
     max-width: 400px;
@@ -80,7 +80,7 @@ body {
     box-shadow: var(--shadow-card), var(--shadow-glow);
     position: relative;
     overflow: hidden;
-}\n
+}
 .login-container::before {
     content: '';
     position: absolute;
@@ -90,17 +90,17 @@ body {
     height: 180px;
     background: radial-gradient(circle, rgba(167,139,250,0.15), transparent 70%);
     pointer-events: none;
-}\n
+}
 .login-header {
     text-align: center;
     margin-bottom: 32px;
-}\n
+}
 .login-icon {
     font-size: 52px;
     display: block;
     margin-bottom: 14px;
     filter: drop-shadow(0 0 20px rgba(167,139,250,0.5));
-}\n
+}
 .login-header h1 {
     font-size: clamp(22px, 6vw, 28px);
     font-weight: 800;
@@ -110,15 +110,15 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 6px;
-}\n
+}
 .login-header p {
     color: var(--text-secondary);
     font-size: 13px;
     font-weight: 400;
-}\n
+}
 .input-group {
     margin-bottom: 18px;
-}\n
+}
 .input-group label {
     display: block;
     margin-bottom: 7px;
@@ -126,7 +126,7 @@ body {
     font-weight: 500;
     color: var(--text-secondary);
     letter-spacing: 0.2px;
-}\n
+}
 .input-group input {
     width: 100%;
     padding: 13px 16px;
@@ -138,15 +138,15 @@ body {
     font-family: inherit;
     outline: none;
     transition: var(--transition);
-}\n
+}
 .input-group input::placeholder {
     color: var(--text-muted);
-}\n
+}
 .input-group input:focus {
     border-color: var(--accent-1);
     background: rgba(167,139,250,0.05);
     box-shadow: 0 0 0 3px rgba(167,139,250,0.12);
-}\n
+}
 .error-msg {
     color: var(--red);
     font-size: 13px;
@@ -154,7 +154,7 @@ body {
     margin-bottom: 12px;
     min-height: 18px;
     font-weight: 500;
-}\n
+}
 #loginBtn {
     width: 100%;
     padding: 15px;
@@ -170,22 +170,22 @@ body {
     transition: var(--transition);
     box-shadow: 0 4px 20px rgba(167,139,250,0.3);
     -webkit-appearance: none;
-}\n
+}
 #loginBtn:active {
     transform: scale(0.97);
     box-shadow: 0 2px 10px rgba(167,139,250,0.2);
-}\n
+}
 @media (hover: hover) {
     #loginBtn:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 28px rgba(167,139,250,0.4);
     }
-}\n
+}
 /* ===================== DASHBOARD ===================== */
 #dashboardPage {
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 16px);
-}\n
+}
 .dashboard-header {
     text-align: center;
     padding: 28px 20px 12px;
@@ -197,7 +197,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-}\n
+}
 .dashboard-header h1 {
     font-size: clamp(20px, 5.5vw, 30px);
     font-weight: 800;
@@ -207,11 +207,11 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 4px;
-}\n
+}
 .dashboard-header p {
     color: var(--text-secondary);
     font-size: 13px;
-}\n
+}
 .logout-btn {
     position: absolute;
     top: 50%;
@@ -228,19 +228,19 @@ body {
     font-family: inherit;
     transition: var(--transition);
     white-space: nowrap;
-}\n
+}
 .logout-btn:active {
     background: rgba(248,113,113,0.2);
     border-color: var(--red);
     color: var(--red);
-}\n
+}
 @media (hover: hover) {
     .logout-btn:hover {
         background: rgba(248,113,113,0.15);
         border-color: var(--red);
         color: var(--red);
     }
-}\n
+}
 .cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -248,7 +248,7 @@ body {
     padding: 20px 16px;
     max-width: 1100px;
     margin: 0 auto;
-}\n
+}
 .card {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
@@ -260,43 +260,43 @@ body {
     overflow: hidden;
     animation: fadeInUp 0.4s ease forwards;
     opacity: 0;
-}\n
+}
 .card::after {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(255,255,255,0.03), transparent);
     pointer-events: none;
-}\n
+}
 .card:active {
     transform: scale(0.96);
     border-color: var(--border-hover);
-}\n
+}
 @media (hover: hover) {
     .card:hover {
         transform: translateY(-4px);
         box-shadow: 0 12px 36px rgba(0,0,0,0.4);
         border-color: var(--border-hover);
     }
-}\n
+}
 .card-icon {
     font-size: 36px;
     margin-bottom: 10px;
     display: block;
     line-height: 1;
-}\n
+}
 .card h3 {
     font-size: clamp(11px, 3.2vw, 15px);
     font-weight: 700;
     margin-bottom: 5px;
     line-height: 1.3;
     color: var(--text-primary);
-}\n
+}
 .card p {
     color: var(--text-muted);
     font-size: clamp(10px, 2.5vw, 12px);
     font-weight: 500;
-}\n
+}
 .card-badge {
     position: absolute;
     top: 12px;
@@ -307,15 +307,15 @@ body {
     font-weight: 700;
     letter-spacing: 0.3px;
     text-transform: uppercase;
-}\n
+}
 .badge-lecture { background: rgba(99,102,241,0.2); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.3); }
 .badge-coding  { background: rgba(52,211,153,0.2); color: #6ee7b7; border: 1px solid rgba(52,211,153,0.3); }
 .badge-mcq     { background: rgba(251,191,36,0.2); color: #fcd34d; border: 1px solid rgba(251,191,36,0.3); }
-.badge-guess   { background: rgba(244,114,182,0.2); color: #f9a8d4; border: 1px solid rgba(244,114,182,0.3); }\n
+.badge-guess   { background: rgba(244,114,182,0.2); color: #f9a8d4; border: 1px solid rgba(244,114,182,0.3); }
 .card.lecture-card { border-top: 2px solid #818cf8; }
 .card.coding-card  { border-top: 2px solid #34d399; }
 .card.mcq-card     { border-top: 2px solid #fbbf24; }
-.card.guess-card   { border-top: 2px solid #f472b6; }\n
+.card.guess-card   { border-top: 2px solid #f472b6; }
 /* ===================== QUIZ PAGE ===================== */
 #quizPage {
     padding-top: env(safe-area-inset-top, 0px);
@@ -323,10 +323,10 @@ body {
     display: none;
     flex-direction: column;
     min-height: 100svh;
-}\n
+}
 #quizPage.active {
     display: flex;
-}\n
+}
 .quiz-header {
     display: flex;
     align-items: center;
@@ -339,7 +339,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-}\n
+}
 .back-btn {
     padding: 9px 14px;
     border: 1px solid var(--border);
@@ -353,8 +353,8 @@ body {
     transition: var(--transition);
     white-space: nowrap;
     flex-shrink: 0;
-}\n
-.back-btn:active { background: var(--border-hover); }\n
+}
+.back-btn:active { background: var(--border-hover); }
 .quiz-header h2 {
     flex: 1;
     font-size: clamp(12px, 3.5vw, 16px);
@@ -363,17 +363,17 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}\n
+}
 .quiz-progress {
     text-align: right;
     font-size: 12px;
     color: var(--text-muted);
     flex-shrink: 0;
     font-weight: 600;
-}\n
+}
 .quiz-progress span {
     color: var(--text-secondary);
-}\n
+}
 .progress-bar {
     height: 4px;
     background: rgba(255,255,255,0.08);
@@ -382,14 +382,14 @@ body {
     overflow: hidden;
     width: 80px;
     margin-left: auto;
-}\n
+}
 .progress-fill {
     height: 100%;
     background: var(--accent-grad);
     border-radius: 2px;
     transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
     width: 0%;
-}\n
+}
 .quiz-body {
     flex: 1;
     max-width: 720px;
@@ -399,26 +399,26 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}\n
+}
 .question-card {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
     padding: 22px 18px;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-card);
-}\n
+}
 .question-card h3 {
     font-size: clamp(14px, 4vw, 17px);
     font-weight: 600;
     line-height: 1.65;
     margin-bottom: 20px;
     color: var(--text-primary);
-}\n
+}
 .options-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}\n
+}
 .option-btn {
     width: 100%;
     padding: 14px 16px;
@@ -434,32 +434,32 @@ body {
     transition: var(--transition);
     line-height: 1.4;
     -webkit-appearance: none;
-}\n
+}
 .option-btn:active:not(.correct):not(.wrong) {
     background: rgba(167,139,250,0.1);
     border-color: var(--accent-1);
     transform: scale(0.98);
-}\n
+}
 @media (hover: hover) {
     .option-btn:hover:not(:disabled):not(.correct):not(.wrong) {
         background: rgba(167,139,250,0.08);
         border-color: rgba(167,139,250,0.4);
         transform: translateX(3px);
     }
-}\n
+}
 .option-btn.correct {
     background: rgba(52,211,153,0.12);
     border-color: var(--green);
     color: var(--green);
     font-weight: 600;
-}\n
+}
 .option-btn.wrong {
     background: rgba(248,113,113,0.12);
     border-color: var(--red);
     color: var(--red);
     font-weight: 600;
-}\n
-.option-btn:disabled { cursor: default; }\n
+}
+.option-btn:disabled { cursor: default; }
 .explanation-box {
     margin-top: 14px;
     padding: 14px 16px;
@@ -470,12 +470,12 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: #bfdbfe;
-}\n
-.explanation-box.hidden { display: none; }\n
+}
+.explanation-box.hidden { display: none; }
 .quiz-nav {
     text-align: center;
     padding-bottom: 8px;
-}\n
+}
 .next-btn {
     padding: 15px 36px;
     border: none;
@@ -492,49 +492,49 @@ body {
     -webkit-appearance: none;
     width: 100%;
     max-width: 340px;
-}\n
+}
 .next-btn:disabled {
     opacity: 0.3;
     cursor: default;
     box-shadow: none;
-}\n
+}
 .next-btn:active:not(:disabled) {
     transform: scale(0.97);
-}\n
+}
 @media (hover: hover) {
     .next-btn:not(:disabled):hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 28px rgba(167,139,250,0.45);
     }
-}\n
+}
 /* ===================== RESULTS PAGE ===================== */
 #resultsPage {
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 24px);
-}\n
+}
 .results-container {
     max-width: 480px;
     margin: 0 auto;
     padding: 40px 20px 32px;
     text-align: center;
-}\n
+}
 .result-emojis {
     font-size: clamp(44px, 12vw, 60px);
     margin-bottom: 16px;
     display: block;
     animation: bounceEmoji 0.7s ease infinite alternate;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
-}\n
+}
 @keyframes bounceEmoji {
     from { transform: translateY(0) rotate(-3deg); }
     to   { transform: translateY(-12px) rotate(3deg); }
-}\n
+}
 .results-container h1 {
     font-size: clamp(20px, 5vw, 26px);
     font-weight: 800;
     margin-bottom: 8px;
     line-height: 1.2;
-}\n
+}
 .score-display {
     font-size: clamp(52px, 16vw, 80px);
     font-weight: 900;
@@ -545,13 +545,13 @@ body {
     background-clip: text;
     letter-spacing: -2px;
     line-height: 1;
-    filter: drop-shadow(0 4px 20px rgba(167,139,250,0.4));\n}\n
+    filter: drop-shadow(0 4px 20px rgba(167,139,250,0.4));\n}
 .results-container > p {
     font-size: clamp(14px, 3.5vw, 17px);
     color: var(--text-secondary);
     margin-bottom: 16px;
     line-height: 1.5;
-}\n
+}
 .meme-container {
     margin: 20px auto;
     max-width: 340px;
@@ -561,31 +561,31 @@ body {
     border: 1px solid var(--border);
     padding: 22px 18px;
     box-shadow: var(--shadow-card);
-}\n
+}
 .meme-face {
     font-size: clamp(70px, 20vw, 100px);
     line-height: 1;
     margin-bottom: 10px;
     display: block;
-}\n
+}
 .meme-text {
     font-size: clamp(13px, 3.5vw, 16px);
     font-weight: 800;
     color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 1.5px;
-}\n
+}
 .meme-subtext {
     font-size: clamp(11px, 3vw, 13px);
     color: var(--text-muted);
     margin-top: 6px;
-}\n
+}
 .result-actions {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 24px;
-}\n
+}
 .result-actions button {
     padding: 15px 24px;
     border: 1.5px solid var(--border);
@@ -599,16 +599,16 @@ body {
     transition: var(--transition);
     width: 100%;
     -webkit-appearance: none;
-}\n
+}
 .result-actions button:first-child {
     background: var(--accent-grad);
     border: none;
     box-shadow: 0 4px 20px rgba(167,139,250,0.3);
     color: #fff;
-}\n
+}
 .result-actions button:active {
     transform: scale(0.97);
-}\n
+}
 @media (hover: hover) {
     .result-actions button:hover {
         transform: translateY(-2px);
@@ -618,7 +618,7 @@ body {
         box-shadow: 0 8px 28px rgba(167,139,250,0.45);
         border: none;
     }
-}\n
+}
 /* ===================== CODE STYLING ===================== */
 .question-card code {
     background: rgba(0,0,0,0.5);
@@ -628,7 +628,7 @@ body {
     font-size: 13px;
     color: #f9a8d4;
     border: 1px solid rgba(255,255,255,0.08);
-}\n
+}
 .question-card pre {
     background: #0d1117;
     padding: 14px;
@@ -640,12 +640,12 @@ body {
     line-height: 1.65;
     color: #e2e8f0;
     border: 1px solid var(--border);
-}\n
+}
 /* ===================== ANIMATIONS ===================== */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(16px); }
     to   { opacity: 1; transform: translateY(0); }
-}\n
+}
 .card:nth-child(1)  { animation-delay: 0.03s; }
 .card:nth-child(2)  { animation-delay: 0.08s; }
 .card:nth-child(3)  { animation-delay: 0.13s; }
@@ -655,7 +655,7 @@ body {
 .card:nth-child(7)  { animation-delay: 0.33s; }
 .card:nth-child(8)  { animation-delay: 0.38s; }
 .card:nth-child(9)  { animation-delay: 0.43s; }
-.card:nth-child(10) { animation-delay: 0.48s; }\n
+.card:nth-child(10) { animation-delay: 0.48s; }
 /* ===================== TABLET (≥600px) ===================== */
 @media (min-width: 600px) {
     .cards-container {
@@ -667,7 +667,7 @@ body {
     .card-icon { font-size: 40px; }
     .result-actions { flex-direction: row; justify-content: center; }
     .result-actions button { width: auto; min-width: 160px; }
-}\n
+}
 /* ===================== DESKTOP (≥900px) ===================== */
 @media (min-width: 900px) {
     .cards-container {
@@ -685,7 +685,7 @@ body {
     .question-card h3 { font-size: 18px; }
     .option-btn { font-size: 15px; padding: 15px 20px; }
     .results-container { padding: 60px 24px; }
-}\n
+}
 /* ===================== iPhone safe areas ===================== */
 @supports (padding: max(0px)) {
     #loginPage   { padding-top: max(24px, env(safe-area-inset-top)); padding-bottom: max(24px, env(safe-area-inset-bottom)); }
